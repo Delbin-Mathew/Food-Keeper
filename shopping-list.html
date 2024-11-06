@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodKeeper - Shopping List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>FoodKeeper</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="add-item.html">Add Item</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="shopping-list.html">Shopping List</a>
+            <a href="donation-locator.html">Donation Locator</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="shopping-list-section">
+            <h2>Interactive Shopping List</h2>
+            <form id="add-to-shopping-list">
+                <label for="shopping-item">Add Item:</label>
+                <input type="text" id="shopping-item" required placeholder="Enter item name">
+                <button type="submit">Add to List</button>
+            </form>
+
+            <ul id="shopping-list">
+                <!-- Shopping list items will appear here -->
+            </ul>
+
+            <button id="print-list" onclick="window.print()">Print/Download List</button>
+        </section>
+    </main>
+    <div class="logo-image">
+        <img src="images/p1.png" alt="">
+    </div>
+    <footer>
+        <p>&copy; 2024 FoodKeeper. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/shopping-list.js"></script>
+</body>
+</html>
